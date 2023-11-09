@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:practice_again_20231021/bank_view/home/title_widget.dart';
 
+import 'home/home_top.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -43,6 +45,13 @@ class _MainState extends State<Main> {
           Image.asset("assets/ex/head3.png", width: 30),
           SizedBox(width: 10),
         ],
+      ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            HomeTop(),
+          ],
+        ),
       ),
     );
   }
