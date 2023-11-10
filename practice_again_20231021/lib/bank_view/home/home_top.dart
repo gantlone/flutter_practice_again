@@ -30,7 +30,8 @@ class HomeTop extends StatelessWidget {
                 ],
               )),
           Container(
-            width: 400,
+            //width: 400,
+            margin: EdgeInsets.only(left: 10, right: 10),
             height: 180,
             decoration: BoxDecoration(
                 color: Colors.white,

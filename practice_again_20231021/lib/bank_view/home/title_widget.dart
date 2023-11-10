@@ -16,20 +16,22 @@ class TitleWidget extends StatelessWidget {
         SizedBox(
           width: 10,
         ),
-        Container(
-          width: 200,
-          height: 40,
-          decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20), color: Colors.white),
-          child: TextField(
-            focusNode: FocusNode(),
-            decoration: InputDecoration(
-                prefix: Icon(Icons.search),
-                prefixIconConstraints: BoxConstraints(minWidth: 30),
-                hintText: "羅成員",
-                hintStyle: TextStyle(fontSize: 16)),
+        Expanded(
+          child: Container(
+            width: 200,
+            height: 40,
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(20), color: Colors.white),
+            child: TextField(
+              focusNode: FocusNode(),
+              decoration: InputDecoration(
+                  prefix: Icon(Icons.search),
+                  prefixIconConstraints: BoxConstraints(minWidth: 30),
+                  hintText: "羅成員",
+                  hintStyle: TextStyle(fontSize: 16)),
+            ),
           ),
-        ),
+        )
       ],
     );
   }
