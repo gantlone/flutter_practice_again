@@ -44,11 +44,11 @@ class HomeTop extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    topShow2('assets/ex/sectop01.png', '存款', 30.w),
-                    topShow2('assets/ex/sectop02.png', '贷款', 30.w),
-                    topShow2('assets/ex/sectop03.png', '理财产品', 30.w),
-                    topShow2('assets/ex/sectop04.png', '信用卡', 30.w),
-                    topShow2('assets/ex/sectop05.png', '直销银行', 30.w),
+                    topShow2('assets/ex/sectop01.png', '存款', 30),
+                    topShow2('assets/ex/sectop02.png', '贷款', 30),
+                    topShow2('assets/ex/sectop03.png', '理财产品', 30),
+                    topShow2('assets/ex/sectop04.png', '信用卡', 30),
+                    topShow2('assets/ex/sectop05.png', '直销银行', 30),
                   ],
                 ),
                 SizedBox(
