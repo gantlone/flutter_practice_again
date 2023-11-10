@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:practice_again_20231021/bank_view/home/title_widget.dart';
 
 import 'home/home_top.dart';
+import 'home/news_widget.dart';
 
 void main() {
   runApp(MyApp());
@@ -50,6 +51,7 @@ class _MainState extends State<Main> {
         child: Column(
           children: [
             HomeTop(),
+            NewsWidget(),
           ],
         ),
       ),
