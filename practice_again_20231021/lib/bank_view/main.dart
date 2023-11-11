@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:practice_again_20231021/bank_view/home/swiper_widget.dart';
 import 'package:practice_again_20231021/bank_view/home/title_widget.dart';
+import 'package:practice_again_20231021/bank_view/widget/mywidgets.dart';
 
 import 'home/home_top.dart';
 import 'home/news_widget.dart';
@@ -52,6 +54,20 @@ class _MainState extends State<Main> {
           children: [
             HomeTop(),
             NewsWidget(),
+            SwiperWidget(),
+            subTitle01("城市精選"),
+            Container(
+              margin: EdgeInsets.all(10),
+              height: 120,
+              //color: Colors.blue,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/ex/loan.png'),
+                  fit: BoxFit.fill,
+                ),
+              ),
+            ),
+            subTitle02("民生眼波聽", "無限精彩 進等你來")
           ],
         ),
       ),

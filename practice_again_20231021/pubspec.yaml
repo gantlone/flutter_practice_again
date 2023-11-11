@@ -31,7 +31,6 @@ dependencies:
   flutter:
     sdk: flutter
    
-      
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -39,6 +38,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   http: ^0.13.6
   flutter_screenutil: ^5.7.0
+  card_swiper:
 
 dev_dependencies:
   flutter_test:
@@ -56,6 +56,11 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
+
+  fonts: 
+  - family: Noto Sans Traditional Chinese
+    fonts:
+    - asset: fonts/NotoSansTC-VariableFont_wght.ttf
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

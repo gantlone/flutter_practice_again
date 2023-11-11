@@ -31,3 +31,42 @@ Widget topShow2(String image, String name, double? width) {
     ),
   );
 }
+
+Widget subTitle01(String title) {
+  return Container(
+    padding: EdgeInsets.all(5),
+    child: Text(
+      title,
+      style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.w600),
+    ),
+    alignment: Alignment.topLeft,
+  );
+}
+
+Widget subTitle02(String title, String subTitle) {
+  return Container(
+    padding: EdgeInsets.only(left: 10.w, bottom: 5.h, top: 10.h),
+    child: Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        Text(
+          title,
+          style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.w600),
+        ),
+        Row(
+          children: [
+            Text(
+              subTitle,
+              style: TextStyle(
+                  fontSize: 16, fontFamily: 'Noto Sans Traditional Chinese'),
+            ),
+            Icon(
+              Icons.chevron_right,
+              size: 24,
+            ),
+          ],
+        )
+      ],
+    ),
+  );
+}

@@ -35,10 +35,7 @@ class HomeTop extends StatelessWidget {
             height: 180,
             decoration: BoxDecoration(
                 color: Colors.white,
-                borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(10),
-                  topRight: Radius.circular(10),
-                )),
+                borderRadius: BorderRadius.all(Radius.circular(10))),
             padding: EdgeInsets.only(top: 20),
             child: Column(
               children: [
