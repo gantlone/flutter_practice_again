@@ -67,7 +67,19 @@ class _MainState extends State<Main> {
                 ),
               ),
             ),
-            subTitle02("民生眼波聽", "無限精彩 進等你來")
+            subTitle02("民生眼波聽", "無限精彩 進等你來"),
+            Container(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  feature(Color(0xFFE4F0FE), '薪悦生活', '一见倾“薪”共见美好',
+                      'feature01.png', '电子工资单', 'feature02.png', '薪上加薪'),
+                  SizedBox(width: 10.w),
+                  feature(Color(0xFFFEF4E4), '小微红包', '拥抱“金”彩人生',
+                      'feature03.png', '小微红包', 'feature04.png', '结算吧'),
+                ],
+              ),
+            ),
           ],
         ),
       ),
