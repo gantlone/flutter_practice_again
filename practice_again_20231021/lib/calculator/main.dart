@@ -15,6 +15,10 @@ class Main extends StatefulWidget {
 class _MainState extends State<Main> {
   @override
   Widget build(BuildContext context) {
+    // double screenWidth = MediaQuery.of(context).size.width;
+    // double screenHeight = MediaQuery.of(context).size.height;
+    // print(screenWidth);
+    // print(screenHeight);
     return MaterialApp(home: Scaffold(body: Calculator()));
     // return MaterialApp(home: Scaffold(body: calc()));
   }

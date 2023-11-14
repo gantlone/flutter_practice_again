@@ -46,6 +46,9 @@ class _CalculatorState extends State<Calculator> {
             cNum.numGloNum = 0;
             cNum.numNum = 0;
             cNum.listFunction = [0];
+            setState(() {
+              displayText = '';
+            });
           },
           child: Text('AC'),
         ));
@@ -94,61 +97,84 @@ class _CalculatorState extends State<Calculator> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-        decoration: BoxDecoration(
-            color: Colors.blue,
-            borderRadius: BorderRadius.all(Radius.circular(5.0))),
-        child: Column(children: [
-          Container(
-            alignment: Alignment.center,
-            height: 100,
+    return Scaffold(
+        appBar: AppBar(title: Text('計算機')),
+        body: Container(
             decoration: BoxDecoration(
-                color: Colors.white70,
+                color: Colors.blue,
                 borderRadius: BorderRadius.all(Radius.circular(5.0))),
-            margin: EdgeInsets.all(5),
-            child: Text(
-              displayText,
-              style: TextStyle(fontSize: 10.0),
-            ),
-          ),
-          Container(
-            alignment: Alignment.center,
-            margin: EdgeInsets.all(10),
-            decoration: BoxDecoration(
-                color: Colors.brown,
-                borderRadius: BorderRadius.all(Radius.circular(10))),
-            padding: EdgeInsets.only(top: 20),
-            child: Column(mainAxisSize: MainAxisSize.min, children: [
-              SizedBox(height: 10),
-              Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
-                ClearButton(),
-                numButton('0'),
-                dotButton(),
-                arithmeticButton('+')
-              ]),
-              SizedBox(height: 10),
-              Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
-                numButton('7'),
-                numButton('8'),
-                numButton('9'),
-                arithmeticButton('-')
-              ]),
-              SizedBox(height: 10),
-              Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
-                numButton('4'),
-                numButton('5'),
-                numButton('6'),
-                arithmeticButton('*')
-              ]),
-              SizedBox(height: 10),
-              Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
-                numButton('1'),
-                numButton('2'),
-                numButton('3'),
-                arithmeticButton('/')
-              ]),
-            ]),
-          ),
-        ]));
+            margin: EdgeInsets.all(25),
+            child: Column(children: [
+              Container(
+                alignment: Alignment.bottomRight,
+                height: 100,
+                decoration: BoxDecoration(
+                    color: Colors.white70,
+                    borderRadius: BorderRadius.all(Radius.circular(5.0))),
+                margin: EdgeInsets.all(10),
+                child: Text(
+                  displayText,
+                  style: TextStyle(fontSize: 50.0),
+                ),
+              ),
+              Expanded(
+                child: Container(
+                  alignment: Alignment.center,
+                  margin: EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                      color: Colors.white70,
+                      borderRadius: BorderRadius.all(Radius.circular(10))),
+                  padding: EdgeInsets.only(top: 20),
+                  child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          margin: EdgeInsets.only(top: 20, bottom: 20),
+                          child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: [
+                                ClearButton(),
+                                numButton('0'),
+                                dotButton(),
+                                arithmeticButton('+')
+                              ]),
+                        ),
+                        Container(
+                          margin: EdgeInsets.only(top: 20, bottom: 20),
+                          child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: [
+                                numButton('7'),
+                                numButton('8'),
+                                numButton('9'),
+                                arithmeticButton('-')
+                              ]),
+                        ),
+                        Container(
+                          margin: EdgeInsets.only(top: 20, bottom: 20),
+                          child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: [
+                                numButton('4'),
+                                numButton('5'),
+                                numButton('6'),
+                                arithmeticButton('*')
+                              ]),
+                        ),
+                        Container(
+                          margin: EdgeInsets.only(top: 20, bottom: 20),
+                          child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: [
+                                numButton('1'),
+                                numButton('2'),
+                                numButton('3'),
+                                arithmeticButton('/')
+                              ]),
+                        ),
+                      ]),
+                ),
+              )
+            ])));
   }
 }
