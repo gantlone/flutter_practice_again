@@ -15,6 +15,7 @@ class Main extends StatefulWidget {
 class _MainState extends State<Main> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: Scaffold(body: keyBoard()));
+    return MaterialApp(home: Scaffold(body: Calculator()));
+    // return MaterialApp(home: Scaffold(body: calc()));
   }
 }
