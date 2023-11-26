@@ -39,6 +39,7 @@ dependencies:
   http: ^0.13.6
   flutter_screenutil: ^5.7.0
   card_swiper:
+  provider:
 
 dev_dependencies:
   flutter_test:
