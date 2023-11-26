@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:provider/provider.dart';
 
 import '../model/CulNumber.dart';
+import '../viewmodel/cultapCount_dao.dart';
+import 'caldrawer.dart';
 
 class Calculator extends StatefulWidget {
-  const Calculator({Key? key}) : super(key: key);
-
   @override
   _CalculatorState createState() => _CalculatorState();
 }
@@ -54,7 +55,7 @@ class _CalculatorState extends State<Calculator> {
         ));
   }
 
-  Widget dotButton() {
+  Widget dotButton(BuildContext context) {
     return Container(
         margin: EdgeInsets.only(left: 10, right: 10),
         //height: 180,
@@ -69,6 +70,8 @@ class _CalculatorState extends State<Calculator> {
             }
             cNum.combineNm();
             print(cNum.numNum);
+
+            context.read<CulTapCountDao>().insertCount();
           },
           child: Text('.'),
         ));
@@ -99,6 +102,7 @@ class _CalculatorState extends State<Calculator> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(title: Text('計算機')),
+        drawer: CalDrawer.getDrawer(context),
         body: Container(
             decoration: BoxDecoration(
                 color: Colors.blue,
@@ -135,7 +139,7 @@ class _CalculatorState extends State<Calculator> {
                               children: [
                                 ClearButton(),
                                 numButton('0'),
-                                dotButton(),
+                                dotButton(context),
                                 arithmeticButton('+')
                               ]),
                         ),

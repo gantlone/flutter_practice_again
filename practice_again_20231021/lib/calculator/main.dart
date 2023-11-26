@@ -1,8 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:practice_again_20231021/calculator/screens/calCount.dart';
 import 'package:practice_again_20231021/calculator/screens/calculator.dart';
+import 'package:practice_again_20231021/calculator/viewmodel/cultapCount_dao.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(Main());
+  runApp(MultiProvider(
+    providers: [
+      ChangeNotifierProvider<CulTapCountDao>(
+        create: (context) => CulTapCountDao(),
+      )
+    ],
+    child: Main(),
+  ));
 }
 
 class Main extends StatefulWidget {
@@ -19,7 +29,14 @@ class _MainState extends State<Main> {
     // double screenHeight = MediaQuery.of(context).size.height;
     // print(screenWidth);
     // print(screenHeight);
-    return MaterialApp(home: Scaffold(body: Calculator()));
+    return MaterialApp(
+      routes: {
+        '/cul': (BuildContext context) => Calculator(),
+        '/count': (BuildContext context) => CalCount(),
+      },
+      home: Scaffold(body: Calculator()),
+      initialRoute: '/cul',
+    );
     // return MaterialApp(home: Scaffold(body: calc()));
   }
 }
