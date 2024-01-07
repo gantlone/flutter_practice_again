@@ -1,0 +1,91 @@
+{
+  "project_info": {
+    "project_number": "987326550123",
+    "firebase_url": "https://project-5054359080012907568-default-rtdb.firebaseio.com",
+    "project_id": "project-5054359080012907568",
+    "storage_bucket": "project-5054359080012907568.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987326550123:android:1592e69e96c6793c01612e",
+        "android_client_info": {
+          "package_name": "com.example.practice_again_20231021"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "987326550123-m0r0srvhrg2osa3kh8cpver315aelfks.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGwyNK9aT7MeuLRRFeYX3kF_FXAzJTweA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "987326550123-m0r0srvhrg2osa3kh8cpver315aelfks.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "987326550123-je834g4l636kb801ku1o52dlgv3ee4t3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.yugiohdb"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987326550123:android:28ea9c8e3a05144701612e",
+        "android_client_info": {
+          "package_name": "com.mycompany.yugiohdb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "987326550123-4qiiqvho07pbc5hni3cunc6u36kg0r5v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mycompany.yugiohdb",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "987326550123-m0r0srvhrg2osa3kh8cpver315aelfks.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGwyNK9aT7MeuLRRFeYX3kF_FXAzJTweA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "987326550123-m0r0srvhrg2osa3kh8cpver315aelfks.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "987326550123-je834g4l636kb801ku1o52dlgv3ee4t3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.yugiohdb"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
